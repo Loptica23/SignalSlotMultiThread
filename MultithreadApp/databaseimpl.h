@@ -24,8 +24,8 @@ private:
 
     DatabaseBaseImplPtr m_db;
     QMutex m_taskQueueMutex;
-    ThreadTaskInterfaceQueuePtr m_tasksQueue;
     bool m_work;
+    ThreadTaskInterfaceQueuePtr m_tasksQueue;
     std::condition_variable m_cv;
 
     //for condition variable
